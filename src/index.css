@@ -1,0 +1,53 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #E4E1DC;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;        /* header above content */
+  align-items: center;           /* center the bounded content */
+}
+
+/* shared width */
+.bounded { width: 75%; max-width: 1100px; }
+
+/* header */
+.header {
+  background-color: #FBF9F6;
+  box-shadow: 0 8px 20px -6px rgba(0,0,0,.12);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;  /* centers children horizontally */
+}
+
+/* stack of cards */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;                  /* space between cards */
+  padding: 1.25rem 0;            /* keeps header close but not touching */
+}
+
+/* individual card boxes */
+.card {
+  background: #FBF9F6;           /* light card bg */
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 20px -6px rgba(0,0,0,.12); /* shadow mainly below */
+}
+
+/* optional: center text inside cards (remove if you want left-aligned) */
+.card { text-align: center; }
+
+/* responsive tweak */
+@media (max-width: 720px) {
+  .bounded { width: 92%; }
+  .card { padding: 1rem; }
+}
