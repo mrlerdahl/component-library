@@ -1,7 +1,10 @@
 import React from "react"
+import "./Badge.css"
 
-export default function Badge() {
+export default function Badge({ color, shape }) {
     return (
-        <p>This is just some test context</p>
+        <span className={`${color}-${shape}`}>
+            Badge
+        </span>
     )
 }

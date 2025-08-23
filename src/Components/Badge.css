@@ -1,0 +1,117 @@
+span {
+    border: 1px solid;
+    padding: 6px 15px;
+    font-weight: 500;
+}
+
+span.red-square {
+    background-color: #FEE2E2;
+    color: #991B1B;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(153, 27, 27, 0.35);
+}
+
+span.red-pill {
+    background-color: #FEE2E2;
+    color: #991B1B;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(153, 27, 27, 0.349);
+}
+
+span.yellow-square {
+    background-color: #FEF3C7;
+    color: #92400E;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(146, 64, 14, 0.35);
+}
+
+span.yellow-pill {
+    background-color: #FEF3C7;
+    color: #92400E;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(146, 64, 14, 0.35);
+}
+
+span.green-square {
+    background-color: #D1FAE5;
+    color: #065F46;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(6, 95, 70, 0.35);
+}
+
+span.green-pill {
+    background-color: #D1FAE5;
+    color: #065F46;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(6, 95, 70, 0.35);
+}
+
+span.blue-square {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(30, 64, 175, 0.35);
+}
+
+span.blue-pill {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(30, 64, 175, 0.35);
+}
+
+span.indigo-square {
+    background-color: #E0E7FF;
+    color: #3730A3;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(55, 48, 163, 0.35);
+}
+
+span.indigo-pill {
+    background-color: #E0E7FF;
+    color: #3730A3;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(55, 48, 163, 0.35);
+}
+
+span.purple-square {
+    background-color: #EDE9FE;
+    color: #5B21B6;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(91, 33, 182, 0.35);
+}
+
+span.purple-pill {
+    background-color: #EDE9FE;
+    color: #5B21B6;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(91, 33, 182, 0.35);
+}
+
+span.pink-square {
+    background-color: #FCE7F3;
+    color: #9D174D;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(157, 23, 77, 0.35);
+}
+
+span.pink-pill {
+    background-color: #FCE7F3;
+    color: #9D174D;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(157, 23, 77, 0.35);
+}
+
+span.gray-square {
+    background-color: #F3F4F6;
+    color: #1F2937;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(31, 41, 55, 0.35);
+}
+
+span.gray-pill {
+    background-color: #F3F4F6;
+    color: #1F2937;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(31, 41, 55, 0.35);
+}

@@ -1,2 +1,7 @@
+div.badge-selector {
+    margin-bottom: 50px;
+}
 
-
+div.badge-selector > select {
+    margin: 10px;
+}

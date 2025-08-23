@@ -5,6 +5,15 @@ import Banner from "./Components/Banner"
 
 function App() {
 
+  const colorArr = ['red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink', 'gray']
+  const shapeArr = ['square', 'pill']
+
+  const colorSelector = colorArr.map(color => {
+    return (
+      <button>{color}</button>
+    )
+  })
+
   return (
      <>
       <header className="header bounded">
@@ -13,7 +22,14 @@ function App() {
 
       <main className="stack bounded">
         <section className="card">
-          <Badge />
+          <h2>Badge Component</h2>
+          <div className="badge-selector">
+            {colorSelector}
+          </div>
+          <Badge 
+            color = 'red'
+            shape = 'pill'
+          />
         </section>
 
         <section className="card">
