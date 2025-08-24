@@ -1,16 +1,32 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import Badge from "./Components/Badge"
 import Banner from "./Components/Banner"
 
 function App() {
 
+  const [changeColor, setChangeColor] = React.useState('red')
+  const [changeShape, setChangeShape] = React.useState('square')
   const colorArr = ['red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink', 'gray']
   const shapeArr = ['square', 'pill']
 
+  function setColor(e) {
+    setChangeColor(color => color=e.target.textContent)
+  }
+  
+  function setShape(e) {
+    setChangeShape(shape => shape=e.target.textContent)
+  }
+
   const colorSelector = colorArr.map(color => {
     return (
-      <button>{color}</button>
+      <button onClick={setColor}>{color}</button>
+    )
+  })
+
+  const shapeSelector = shapeArr.map(shape => {
+    return (
+      <button onClick={setShape}>{shape}</button>
     )
   })
 
@@ -25,10 +41,11 @@ function App() {
           <h2>Badge Component</h2>
           <div className="badge-selector">
             {colorSelector}
+            {shapeSelector}
           </div>
           <Badge 
-            color = 'red'
-            shape = 'pill'
+            color = {changeColor}
+            shape = {changeShape}
           />
         </section>
 
