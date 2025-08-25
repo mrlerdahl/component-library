@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import OptionSelector from './OptionSelector' 
 import Badge from "./Components/Badge"
 import Banner from "./Components/Banner"
 
@@ -10,25 +11,11 @@ function App() {
   const colorArr = ['red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink', 'gray']
   const shapeArr = ['square', 'pill']
 
-  function setColor(e) {
-    setChangeColor(color => color=e.target.textContent)
+  function setOption(value) {
+    colorArr.includes(value) ?
+    setChangeColor(value)
+    : setChangeShape(value)
   }
-  
-  function setShape(e) {
-    setChangeShape(shape => shape=e.target.textContent)
-  }
-
-  const colorSelector = colorArr.map(color => {
-    return (
-      <button onClick={setColor}>{color}</button>
-    )
-  })
-
-  const shapeSelector = shapeArr.map(shape => {
-    return (
-      <button onClick={setShape}>{shape}</button>
-    )
-  })
 
   return (
      <>
@@ -37,11 +24,24 @@ function App() {
       </header>
 
       <main className="stack bounded">
-        <section className="card">
-          <h2>Badge Component</h2>
+
+        <section className="box">
+          <h2>
+            Badge Component
+          </h2>
           <div className="badge-selector">
-            {colorSelector}
-            {shapeSelector}
+            <div className="badge-option">
+              Color &nbsp;: &nbsp;<OptionSelector 
+              options = {colorArr}
+              setOption = {setOption}
+              />
+            </div>
+            <div className="badge-option">
+              Shape : &nbsp;<OptionSelector 
+              options = {shapeArr}
+              setOption = {setOption}
+              />
+            </div>
           </div>
           <Badge 
             color = {changeColor}
@@ -49,7 +49,7 @@ function App() {
           />
         </section>
 
-        <section className="card">
+        <section className="box">
           <Banner />
         </section>
 

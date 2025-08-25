@@ -1,7 +1,8 @@
 div.badge-selector {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-div.badge-selector > select {
-    margin: 10px;
+div.badge-selector > div.badge-option {
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
 }

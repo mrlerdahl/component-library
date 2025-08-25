@@ -36,7 +36,7 @@ body {
 }
 
 /* individual card boxes */
-.card {
+.box {
   background: #FBF9F6;           /* light card bg */
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
@@ -44,7 +44,7 @@ body {
 }
 
 /* optional: center text inside cards (remove if you want left-aligned) */
-.card { text-align: center; }
+/* .card { text-align: center; } */
 
 /* responsive tweak */
 @media (max-width: 720px) {
